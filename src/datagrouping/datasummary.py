@@ -1,3 +1,6 @@
+3  # creating class named as Datasummary
+
+
 class DataSummary:
     def __init__(self, df):
         """
@@ -62,5 +65,5 @@ class DataSummary:
         Returns:
         - pd.DataFrame: The dataset after removing specified columns.
         """
-        self.data.drop(columns=["Unnamed: 13", "Unnamed: 14"], inplace=True)
+        self.data.drop(columns=["unnamed 13", "unnamed 14"], inplace=True)
         return self.data

@@ -1,3 +1,4 @@
+# importing the Library's
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -5,10 +6,36 @@ import seaborn as sns
 
 
 class DataIntro:
-    def __init__(self, df):
+    """
+    This class provides an introduction and overview of the dataset containing information about customers
+    and their purchasing behavior. It includes a method for printing details about the dataset.
+
+    Methods
+    -------
+    data_details(self) -> None:
+        Prints an overview of the dataset, describing the available fields and providing initial insights
+        into customer demographics and transactional patterns.
+
+    Attributes
+    ----------
+    df : pd.DataFrame
+        The DataFrame containing the dataset.
+    """
+
+    def __init__(self, df: pd.DataFrame):
+        """
+        Initializes the DataIntro instance.
+
+        Parameters:
+        - df (pd.DataFrame): The DataFrame containing the dataset.
+        """
         self.df = df
 
-    def Data_Details(self):
+    def data_details(self) -> None:
+        """
+        Prints an overview of the dataset, describing the available fields and providing initial insights
+        into customer demographics and transactional patterns.
+        """
         print(
             f"""The dataset provided contains information about customers and their purchasing behavior.
             .The fields include User_ID, Cust_name, Product_ID, Gender, Age Group, Age, Marital_Status, State, Zone, Occupation, Product_Category, Orders, Amount, Status, and an unnamed column.
